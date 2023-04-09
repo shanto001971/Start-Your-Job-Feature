@@ -22,10 +22,10 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex justify-around items-center ">
+            <div className="flex justify-around items-center mt-5 ">
 
                 <div className="">
-                    <h1 className='text-2xl'>
+                    <h1 className='text-2xl font-semibold'>
                         Start Your Job Feature
                     </h1>
                 </div>
@@ -56,7 +56,7 @@ const Header = () => {
                     </NavLink>
                 </div>
                 <div className="">
-                    <button className="btn btn-active bg-gradient-to-r from-purple-500 to-pink-500">Star Applying</button>
+                    <button className="btn btn-active bg-gradient-to-r from-cyan-500 to-blue-500">Star Applying</button>
                 </div>
             </div>
 
