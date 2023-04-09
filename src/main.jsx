@@ -10,6 +10,7 @@ import Homes from './Components/Home/Homes';
 import Statistics from './Components/Statistics/Statistics';
 import AppliedJobs from './Components/AppliedJobs/AppliedJobs';
 import Blog from './Components/Blog/Blog';
+import ReviewPage from './Components/ReviewPage/ReviewPage';
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,7 @@ const router = createBrowserRouter([
       {
         path:"Statistics",
         element:<Statistics/>,
+        loader:()=> fetch('/public/rechart.json')
         
       },
       {
@@ -34,6 +36,11 @@ const router = createBrowserRouter([
       {
         path:"Blog",
         element:<Blog></Blog>,
+        
+      },
+      {
+        path:"ReviewPage",
+        element:<ReviewPage/>,
         
       },
     ]
