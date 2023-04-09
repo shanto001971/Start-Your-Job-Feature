@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 const Header = () => {
     return (
 
-        <div className={``}>
+        <div className="">
 
             <div className="md:hidden">
                 <div className="navbar bg-base-100">
@@ -37,19 +37,19 @@ const Header = () => {
                         Home
                     </NavLink>
                     <NavLink
-                        to={'/'}
+                        to={'Statistics'}
                         className={({ isActive }) => isActive && "text-blue-600/100"}
                     >
                         Statistics
                     </NavLink>
                     <NavLink
-                        to={'/'}
+                        to={'AppliedJobs'}
                         className={({ isActive }) => isActive && "text-blue-600/100"}
                     >
                         Applied Jobs
                     </NavLink>
                     <NavLink
-                        to={'/'}
+                        to={'Blog'}
                         className={({ isActive }) => isActive && "text-blue-600/100"}
                     >
                         Blog

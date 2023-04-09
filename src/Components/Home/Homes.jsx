@@ -1,7 +1,23 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import JobCategory from '../JobCategoryList/JobCategory';
+import FeaturedJobs from '../Featured Jobs/FeaturedJobs';
+import { useLoaderData } from 'react-router-dom';
+
+
 
 const Homes = () => {
+    // // const {data,setData}=useState()
+    // // console.log(data)
+    // useEffect(()=>{
+    //     fetch('/public/jobs.json')
+    //     .then(res=>res.json())
+    //     .then(data=>console.log(data))
+    // },[])
+    
+
+    const items = useLoaderData()
+    // console.log(items)
+
     return (
         <div className='p-5'>
             <section className='lg:flex justify-center'>
@@ -23,6 +39,15 @@ const Homes = () => {
             </section>
             {/* Featured Jobs */}
             <section>
+                <div className="">
+                    
+                </div>
+                <div className="grid lg:grid-cols-2 gap-3">
+                {
+                    items.map(data=><FeaturedJobs key={data.id} data={data} />)
+                }
+                </div>
+                
                 
             </section>
         </div>
