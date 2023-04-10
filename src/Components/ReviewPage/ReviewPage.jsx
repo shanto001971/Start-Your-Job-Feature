@@ -1,6 +1,7 @@
 import React from 'react';
 
-const ReviewPage = ({item}) => {
+
+const ReviewPage = () => {
    
     return (
         <div>

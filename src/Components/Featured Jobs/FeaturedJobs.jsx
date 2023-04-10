@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { MapPinIcon, CurrencyDollarIcon } from '@heroicons/react/24/solid'
 import { Link } from 'react-router-dom';
-import ReviewPage from '../ReviewPage/ReviewPage';
+
 
 const FeaturedJobs = ({ data }) => {
     // console.log(data)
@@ -16,10 +16,12 @@ const FeaturedJobs = ({ data }) => {
     //     const itemData = sortdata?data.slice(0,5):data
     //     setDatas(itemData)
     // }
-
-    const handelViewDetails=(pd)=>{
-        setItem(pd)
+    const [datas,setDatas]=useState({})
+    const handelReviewPage=(item)=>{
+        setDatas(item)
+        
     }
+    
     return (
         <div className='p-5 mt-5 border'>
             <img className='w-60 h-24' src={data.img} alt="" />
@@ -27,7 +29,7 @@ const FeaturedJobs = ({ data }) => {
             <p>{brandname}</p>
             <div className="flex gap-2">
                 <button className='border border-indigo-600 rounded p-2 m-1'>{onsite ? "On-site" : 'Remote'}</button>
-                <button className='border border-indigo-600 rounded p-2 m-1'>{fulltime && "Full-time"}</button>
+                <button className='border border-indigo-600 rounded p-2 m-1'>{fulltime ? "Full-time":"Full-time"}</button>
             </div>
             <div className="flex gap-5">
                 <div className="flex gap-1">
@@ -42,8 +44,9 @@ const FeaturedJobs = ({ data }) => {
             <Link
             to={'ReviewPage'}
             >
-            <button onClick={()=>handelViewDetails(data)} className="btn btn-active bg-gradient-to-r from-cyan-500 to-blue-500 mt-3">View Details</button>
+            <button onClick={()=>handelReviewPage(data)} className="btn btn-active bg-gradient-to-r from-cyan-500 to-blue-500 mt-3">View Details</button>
             </Link>
+            
         </div>
     );
 };

@@ -1,69 +1,110 @@
 [
-    {
-      "id": "ab6f2e6b-1b7a-4bc1-9e16-6b8e6337ec54",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1280px-Google_2015_logo.svg.png",
-      "title": "Software Engineer",
-      "brandname": "Google LLC",
-      "location": "San Francisco, CA",
-      "salary": "$120,000 - $150,000 per year",
-      "fulltime": true,
-      "onsite": true,
-      "remote": false
-    },
-    {
-      "id": "d5a5c5e2-c5c5-47fa-8f17-936d3a3b08e3",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png",
-      "title": "Marketing Manager",
-      "brandname": "Netflix",
-      "location": "New York, NY",
-      "salary": "$90,000 - $110,000 per year",
-      "fulltime": true,
-      "onsite": true,
-      "remote": false
-    },
-    {
-      "id": "0d290731-7b45-4e9f-9c8d-10297e57e33f",
-      "img": "https://logowik.com/content/uploads/images/tesla.jpg",
-      "title": "Graphic Designer",
-      "brandname": "Tesla",
-      "location": "Chicago, IL",
-      "salary": "$50,000 - $70,000 per year",
-      "fulltime": true,
-      "onsite": true,
-      "remote": false
-    },
-    {
-      "id": "17e00ed6-9dd9-46d6-8907-018c492e85b7",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png",
-      "title": "Financial Analyst",
-      "brandname": "Amazon",
-      "location": "Boston, MA",
-      "salary": "$80,000 - $100,000 per year",
-      "fulltime": true,
-      "onsite": false,
-      "remote": true
-    },
-    {
-      "id": "3d23abf4-c11c-4fc6-89fc-035eaa6b159c",
-      "img": "https://1000logos.net/wp-content/uploads/2016/11/Facebook-Logo-2015.jpg",
-      "title": "Sales Representative",
-      "brandname": "Facebook",
-      "location": "Los Angeles, CA",
-      "salary": "$60,000 - $80,000 per year",
-      "fulltime": true,
-      "onsite": false,
-      "remote": true
-    },
-    {
-      "id": "14d105b4-0f20-4e3c-9f9e-c0c997b88f12",
-      "img": "https://logos-world.net/wp-content/uploads/2022/05/Daraz-Logo.png",
-      "title": "Customer Service Specialist",
-      "brandname": "Daraz",
-      "location": "Dallas, TX",
-      "salary": "$40,000 - $50,000 per year",
-      "fulltime": true,
-      "onsite": true,
-      "remote": true
+  {
+    "id": "ab6f2e6b-1b7a-4bc1-9e16-6b8e6337ec54",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1280px-Google_2015_logo.svg.png",
+    "title": "Software Engineer",
+    "brandname": "Google LLC",
+    "location": "San Francisco, CA",
+    "salary": "$120,000 - $150,000 per year",
+    "fulltime": "true",
+    "onsite": "false",
+    "remote": "true",
+    "job_description": "We are seeking a talented software engineer to join our team and help us build innovative solutions for our clients.",
+    "job_responsibility": "Design and develop high-quality software solutions",
+    "required_experience": "5+ years of experience in software engineering",
+    "contact_info": {
+      "phone": "+1 (555) 123-4567",
+      "email": "jobs@company.com"
     }
-  ]
-  
+  },
+  {
+    "id": "d5a5c5e2-c5c5-47fa-8f17-936d3a3b08e3",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png",
+    "title": "Marketing Manager",
+    "brandname": "Netflix",
+    "location": "New York, NY",
+    "salary": "$90,000 - $110,000 per year",
+    "fulltime": "true",
+    "onsite": "true",
+    "remote": "false",
+    "job_description": "We are seeking a talented software engineer to join our team and help us build innovative solutions for our clients.",
+    "job_responsibility": "Design and develop high-quality software solutions",
+    "required_experience": "5+ years of experience in software engineering",
+    "contact_info": {
+      "phone": "+1 (555) 123-4567",
+      "email": "jobs@company.com"
+    }
+  },
+  {
+    "id": "0d290731-7b45-4e9f-9c8d-10297e57e33f",
+    "img": "https://logowik.com/content/uploads/images/tesla.jpg",
+    "title": "Graphic Designer",
+    "brandname": "Tesla",
+    "location": "Chicago, IL",
+    "salary": "$50,000 - $70,000 per year",
+    "fulltime": "true",
+    "onsite": "true",
+    "remote": "false",
+    "job_description": "We are seeking a talented software engineer to join our team and help us build innovative solutions for our clients.",
+    "job_responsibility": "Design and develop high-quality software solutions",
+    "required_experience": "5+ years of experience in software engineering",
+    "contact_info": {
+      "phone": "+1 (555) 123-4567",
+      "email": "jobs@company.com"
+    }
+  },
+  {
+    "id": "17e00ed6-9dd9-46d6-8907-018c492e85b7",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png",
+    "title": "Financial Analyst",
+    "brandname": "Amazon",
+    "location": "Boston, MA",
+    "salary": "$80,000 - $100,000 per year",
+    "fulltime": "true",
+    "onsite": "false",
+    "remote": "true",
+    "job_description": "We are seeking a talented software engineer to join our team and help us build innovative solutions for our clients.",
+    "job_responsibility": "Design and develop high-quality software solutions",
+    "required_experience": "5+ years of experience in software engineering",
+    "contact_info": {
+      "phone": "+1 (555) 123-4567",
+      "email": "jobs@company.com"
+    }
+  },
+  {
+    "id": "3d23abf4-c11c-4fc6-89fc-035eaa6b159c",
+    "img": "https://1000logos.net/wp-content/uploads/2016/11/Facebook-Logo-2015.jpg",
+    "title": "Sales Representative",
+    "brandname": "Facebook",
+    "location": "Los Angeles, CA",
+    "salary": "$60,000 - $80,000 per year",
+    "fulltime": "true",
+    "onsite": "true",
+    "remote": "false",
+    "job_description": "We are seeking a talented software engineer to join our team and help us build innovative solutions for our clients.",
+    "job_responsibility": "Design and develop high-quality software solutions",
+    "required_experience": "5+ years of experience in software engineering",
+    "contact_info": {
+      "phone": "+1 (555) 123-4567",
+      "email": "jobs@company.com"
+    }
+  },
+  {
+    "id": "14d105b4-0f20-4e3c-9f9e-c0c997b88f12",
+    "img": "https://logos-world.net/wp-content/uploads/2022/05/Daraz-Logo.png",
+    "title": "Customer Service Specialist",
+    "brandname": "Daraz",
+    "location": "Dallas, TX",
+    "salary": "$40,000 - $50,000 per year",
+    "fulltime": "true",
+    "onsite": "false",
+    "remote": "true",
+    "job_description": "We are seeking a talented software engineer to join our team and help us build innovative solutions for our clients.",
+    "job_responsibility": "Design and develop high-quality software solutions",
+    "required_experience": "5+ years of experience in software engineering",
+    "contact_info": {
+      "phone": "+1 (555) 123-4567",
+      "email": "jobs@company.com"
+    }
+  }
+]
