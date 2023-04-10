@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom';
 const FeaturedJobs = ({ data }) => {
     // console.log(data)
     const [item,setItem]=useState({})
-    const { title, brandname, location, salary, onsite, fulltime, remote } = data
-    // console.log(data)
+    const { title, brandname, location, salary, onsite, fulltime, remote,id } = data
+    // console.log(id)
     // const [sortdata, setSortdata] = useState(false)
     // const[datas,setDatas]=useState([])
 
@@ -42,9 +42,9 @@ const FeaturedJobs = ({ data }) => {
                 </div>
             </div>
             <Link
-            to={'ReviewPage'}
+            to={`/ReviewPage/${id}`}
             >
-            <button onClick={()=>handelReviewPage(data)} className="btn btn-active bg-gradient-to-r from-cyan-500 to-blue-500 mt-3">View Details</button>
+            <button className="btn btn-active bg-gradient-to-r from-cyan-500 to-blue-500 mt-3">View Details</button>
             </Link>
             
         </div>

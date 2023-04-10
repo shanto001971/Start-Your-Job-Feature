@@ -1,6 +1,6 @@
 [
   {
-    "id": "ab6f2e6b-1b7a-4bc1-9e16-6b8e6337ec54",
+    "id": "01",
     "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1280px-Google_2015_logo.svg.png",
     "title": "Software Engineer",
     "brandname": "Google LLC",
@@ -18,7 +18,7 @@
     }
   },
   {
-    "id": "d5a5c5e2-c5c5-47fa-8f17-936d3a3b08e3",
+    "id": "02",
     "img": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png",
     "title": "Marketing Manager",
     "brandname": "Netflix",
@@ -36,7 +36,7 @@
     }
   },
   {
-    "id": "0d290731-7b45-4e9f-9c8d-10297e57e33f",
+    "id": "03",
     "img": "https://logowik.com/content/uploads/images/tesla.jpg",
     "title": "Graphic Designer",
     "brandname": "Tesla",
@@ -54,7 +54,7 @@
     }
   },
   {
-    "id": "17e00ed6-9dd9-46d6-8907-018c492e85b7",
+    "id": "04",
     "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png",
     "title": "Financial Analyst",
     "brandname": "Amazon",
@@ -72,7 +72,7 @@
     }
   },
   {
-    "id": "3d23abf4-c11c-4fc6-89fc-035eaa6b159c",
+    "id": "05",
     "img": "https://1000logos.net/wp-content/uploads/2016/11/Facebook-Logo-2015.jpg",
     "title": "Sales Representative",
     "brandname": "Facebook",
@@ -90,7 +90,7 @@
     }
   },
   {
-    "id": "14d105b4-0f20-4e3c-9f9e-c0c997b88f12",
+    "id": "06",
     "img": "https://logos-world.net/wp-content/uploads/2022/05/Daraz-Logo.png",
     "title": "Customer Service Specialist",
     "brandname": "Daraz",

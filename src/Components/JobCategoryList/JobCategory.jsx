@@ -14,21 +14,24 @@ const JobCategory = () => {
     }, [])
 
     return (
-        <div className='mt-5 border'>
+        <div className=' border'>
             <div className="text-center mt-5">
                 <h1 className='font-bold text-3xl '>
-                Job Category List
+                    Job Category List
                 </h1>
                 <p>
-                Explore thousands of job opportunities with all the information you need. Its your future
+                    Explore thousands of job opportunities with all the information you need. Its your future
                 </p>
             </div>
 
-           <div className="mt-5 px-px lg:flex justify-center gap-3">
-           {
-                data.map(singleData => <SingleJobData singleData={singleData} />)
-            }
-           </div>
+            <div className="mt-5 px-px lg:flex justify-center gap-3">
+                {
+                    data.map((singleData, index) => <SingleJobData
+                        key={index}
+                        singleData={singleData}
+                    />)
+                }
+            </div>
         </div>
     );
 };
