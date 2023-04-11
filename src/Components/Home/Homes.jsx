@@ -58,7 +58,7 @@ const Homes = () => {
                     } */}
                 </div>
                 <div className="text-center">
-                    <button onClick={handleBtnClick} className="btn btn-active bg-gradient-to-r from-cyan-500 to-blue-500 mt-3 w-40">See More</button>
+                    <button onClick={handleBtnClick} className="btn btn-active bg-gradient-to-r from-cyan-500 to-blue-500 mt-3 w-40">{fold?"See Less ":'See More'}</button>
                 </div>
 
             </section>

@@ -41,6 +41,9 @@ const Header = () => {
                             </ul>
                         </div>
                     </div>
+                    <div className="navbar-center">
+                        <a className="btn btn-ghost normal-case text-xl">Start Your Job Feature</a>
+                    </div>
                 </div>
             </div>
             <div className="hidden md:flex justify-around items-center mt-5 ">

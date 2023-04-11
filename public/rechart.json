@@ -1,63 +1,36 @@
 [
     {
       "subject": "Mathematics",
-      "marks": 95
+      "marks": 48
     },
     {
       "subject": "English",
-      "marks": 85
+      "marks": 56
     },
     {
       "subject": "Science",
-      "marks": 92
+      "marks": 58
     },
     {
       "subject": "Social Studies",
-      "marks": 89
+      "marks": 55
     },
     {
       "subject": "Computer Science",
-      "marks": 96
+      "marks": 42
     },
     {
       "subject": "Physical Education",
-      "marks": 90
+      "marks": 55
     },
     {
       "subject": "Art",
-      "marks": 87
+      "marks": 60
     },
     {
       "subject": "Music",
-      "marks": 91
-    },
-    {
-      "subject": "History",
-      "marks": 84
-    },
-    {
-      "subject": "Geography",
-      "marks": 93
-    },
-    {
-      "subject": "Biology",
-      "marks": 88
-    },
-    {
-      "subject": "Chemistry",
-      "marks": 94
-    },
-    {
-      "subject": "Physics",
-      "marks": 89
-    },
-    {
-      "subject": "Foreign Language",
-      "marks": 86
-    },
-    {
-      "subject": "Economics",
-      "marks": 90
+      "marks": 50
     }
+    
   ]
   
