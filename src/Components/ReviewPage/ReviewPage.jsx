@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { MapPinIcon, CurrencyDollarIcon, BriefcaseIcon, PhoneIcon, AtSymbolIcon } from '@heroicons/react/24/solid'
 
 
 const ReviewPage = () => {
@@ -21,7 +22,7 @@ const ReviewPage = () => {
 
     return (
         <div>
-            <div className="h-48 text-center mt-5">
+            <div  className="h-48 text-center mt-5">
                 <h1 className='text-5xl'>Job Details</h1>
             </div>
             <div className="lg:flex gap-5 p-10 border">
@@ -38,14 +39,33 @@ const ReviewPage = () => {
                 </div>
                 <div className="bg-slate-200 p-10 rounded">
                     <h1>Job Details</h1>
-                    <p><strong>Salary : </strong>{info?.salary}</p>
-                    <p><strong>Job Title :</strong>{info?.title}</p>
+                    <div className="flex justify-center  gap-1">
+                        <CurrencyDollarIcon className='w-4' />
+                        <p><strong>Salary : </strong>{info?.salary}</p>
+                    </div>
+                    <div className="flex gap-1">
+                        <BriefcaseIcon className='w-3' />
+                        <p><strong>Job Title :</strong>{info?.title}</p>
+                    </div>
+
                     <div className="">
                         <h1>Contact Information</h1>
-                        <p><strong>Phone :</strong>{info?.contact_info.phone}</p>
-                        <p><strong>Email :</strong>{info?.contact_info.email}</p>
-                        <p><strong>Address :</strong>{info?.location
-                        }</p>
+                        <div className=" flex gap-1">
+                            <PhoneIcon className='w-3'></PhoneIcon>
+                            <p><strong>Phone :</strong>{info?.contact_info.phone}</p>
+                        </div>
+                        <div className=" flex gap-1">
+                            <AtSymbolIcon className='w-3' />
+                            <p><strong>Email :</strong>{info?.contact_info.email}</p>
+                        </div>
+                        <div className=" flex gap-1">
+                            <MapPinIcon className='w-3' />
+                            <p><strong>Address :</strong>{info?.location
+                            }</p>
+                        </div>
+
+
+
                     </div>
                 </div>
             </div>
