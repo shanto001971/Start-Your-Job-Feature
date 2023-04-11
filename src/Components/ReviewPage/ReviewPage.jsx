@@ -25,6 +25,7 @@ const ReviewPage = () => {
         <div>
             <div className="h-48 text-center mt-5">
                 <h1 className='text-5xl'>Job Details</h1>
+               
             </div>
             <div className="lg:flex gap-5 p-10 border">
                 <div className="w-9/12 p-5">
@@ -40,7 +41,8 @@ const ReviewPage = () => {
                 </div>
                 <div className="">
                     <div className="bg-slate-200 p-10 rounded">
-                        <h1>Job Details</h1>
+                        <h1 className='text-2xl mb-4'>Job Details</h1>
+                        <hr />
                         <div className="flex justify-center  gap-1">
                             <CurrencyDollarIcon className='w-4' />
                             <p><strong>Salary : </strong>{info?.salary}</p>
@@ -50,8 +52,9 @@ const ReviewPage = () => {
                             <p><strong>Job Title :</strong>{info?.title}</p>
                         </div>
 
-                        <div className="">
-                            <h1>Contact Information</h1>
+                        <div className="mt-3">
+                            <h1 className='text-2xl mb-4'>Contact Information</h1>
+                            <hr />
                             <div className=" flex gap-1">
                                 <PhoneIcon className='w-3'></PhoneIcon>
                                 <p><strong>Phone :</strong>{info?.contact_info.phone}</p>
@@ -70,7 +73,7 @@ const ReviewPage = () => {
 
                     </div>
                     <Link
-                    to="/appalidJob"
+                    to="/AppliedJobs"
                     >
                     <button onClick={()=>addToDb(info?.id)} className="btn btn-active bg-gradient-to-r from-cyan-500 to-blue-500 mt-3 w-full" >Apply Now</button>
                     </Link>

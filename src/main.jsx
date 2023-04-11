@@ -11,11 +11,13 @@ import Statistics from './Components/Statistics/Statistics';
 import AppliedJobs from './Components/AppliedJobs/AppliedJobs';
 import Blog from './Components/Blog/Blog';
 import ReviewPage from './Components/ReviewPage/ReviewPage';
+import ErrorElement from './Components/ErrorElement/ErrorElement';
 
 const router = createBrowserRouter([
   {
     path: "/", 
     element: <Home></Home>,
+    errorElement:<ErrorElement/>,
     children:[
       {
         path:"/",
@@ -48,11 +50,7 @@ const router = createBrowserRouter([
         element:<ReviewPage/>,
         
       },
-      {
-        path:"appalidJob",
-        element:<AppliedJobs/>,
-        
-      },
+      
     ]
   },
 ]);
