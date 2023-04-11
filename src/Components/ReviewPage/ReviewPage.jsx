@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { MapPinIcon, CurrencyDollarIcon, BriefcaseIcon, PhoneIcon, AtSymbolIcon } from '@heroicons/react/24/solid'
+import { addToDb } from '../../Utiletis/Utiletis';
 
 
 const ReviewPage = () => {
     const [info, setInfo] = useState();
-
+    
 
     const { id } = useParams();
 
@@ -17,12 +18,12 @@ const ReviewPage = () => {
                 setInfo(foundProduct)
             })
     }, []);
-    console.log(info)
-    //   const {job_description,job_responsibility,location,required_experience,salary,title}=info
+    
+
 
     return (
         <div>
-            <div  className="h-48 text-center mt-5">
+            <div className="h-48 text-center mt-5">
                 <h1 className='text-5xl'>Job Details</h1>
             </div>
             <div className="lg:flex gap-5 p-10 border">
@@ -37,38 +38,47 @@ const ReviewPage = () => {
                     <p className=''>{info?.required_experience}</p>
 
                 </div>
-                <div className="bg-slate-200 p-10 rounded">
-                    <h1>Job Details</h1>
-                    <div className="flex justify-center  gap-1">
-                        <CurrencyDollarIcon className='w-4' />
-                        <p><strong>Salary : </strong>{info?.salary}</p>
-                    </div>
-                    <div className="flex gap-1">
-                        <BriefcaseIcon className='w-3' />
-                        <p><strong>Job Title :</strong>{info?.title}</p>
-                    </div>
-
-                    <div className="">
-                        <h1>Contact Information</h1>
-                        <div className=" flex gap-1">
-                            <PhoneIcon className='w-3'></PhoneIcon>
-                            <p><strong>Phone :</strong>{info?.contact_info.phone}</p>
+                <div className="">
+                    <div className="bg-slate-200 p-10 rounded">
+                        <h1>Job Details</h1>
+                        <div className="flex justify-center  gap-1">
+                            <CurrencyDollarIcon className='w-4' />
+                            <p><strong>Salary : </strong>{info?.salary}</p>
                         </div>
-                        <div className=" flex gap-1">
-                            <AtSymbolIcon className='w-3' />
-                            <p><strong>Email :</strong>{info?.contact_info.email}</p>
-                        </div>
-                        <div className=" flex gap-1">
-                            <MapPinIcon className='w-3' />
-                            <p><strong>Address :</strong>{info?.location
-                            }</p>
+                        <div className="flex gap-1">
+                            <BriefcaseIcon className='w-3' />
+                            <p><strong>Job Title :</strong>{info?.title}</p>
                         </div>
 
+                        <div className="">
+                            <h1>Contact Information</h1>
+                            <div className=" flex gap-1">
+                                <PhoneIcon className='w-3'></PhoneIcon>
+                                <p><strong>Phone :</strong>{info?.contact_info.phone}</p>
+                            </div>
+                            <div className=" flex gap-1">
+                                <AtSymbolIcon className='w-3' />
+                                <p><strong>Email :</strong>{info?.contact_info.email}</p>
+                            </div>
+                            <div className=" flex gap-1">
+                                <MapPinIcon className='w-3' />
+                                <p><strong>Address :</strong>{info?.location
+                                }</p>
+                            </div>
 
+                        </div>
 
                     </div>
+                    <Link
+                    to="/appalidJob"
+                    >
+                    <button onClick={()=>addToDb(info?.id)} className="btn btn-active bg-gradient-to-r from-cyan-500 to-blue-500 mt-3 w-full" >Apply Now</button>
+                    </Link>
+
                 </div>
+
             </div>
+
         </div>
     );
 };

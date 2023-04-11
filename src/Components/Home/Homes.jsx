@@ -45,8 +45,9 @@ const Homes = () => {
             </section>
             {/* Featured Jobs */}
             <section>
-                <div className="">
-                    <h1 className='text-lg'>Job Details</h1>
+                <div className="text-center p-6">
+                    <h1 className='text-4xl'>Featured Jobs</h1>
+                    <p>Explore thousands of job opportunities with all the information you need. Its your future</p>
                 </div>
                 <div className="grid lg:grid-cols-2 gap-3">
                     {fold ? (items.map(data => <FeaturedJobs key={data.id} data={data} />)) : (items.slice(0,4).map(data => <FeaturedJobs key={data.id} data={data} />))

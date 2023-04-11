@@ -48,6 +48,11 @@ const router = createBrowserRouter([
         element:<ReviewPage/>,
         
       },
+      {
+        path:"appalidJob",
+        element:<AppliedJobs/>,
+        
+      },
     ]
   },
 ]);
