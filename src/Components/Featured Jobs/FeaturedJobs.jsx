@@ -4,23 +4,16 @@ import { Link } from 'react-router-dom';
 
 
 const FeaturedJobs = ({ data }) => {
-    // console.log(data)
-    const [item,setItem]=useState({})
+    
+    
     const { title, brandname, location, salary, onsite, fulltime, remote,id } = data
-    // console.log(id)
-    // const [sortdata, setSortdata] = useState(false)
-    // const[datas,setDatas]=useState([])
-
-    // if (data) {
-
-    //     const itemData = sortdata?data.slice(0,5):data
-    //     setDatas(itemData)
-    // }
+    // console(data.onsite)
     const [datas,setDatas]=useState({})
     const handelReviewPage=(item)=>{
         setDatas(item)
         
     }
+    
     
     return (
         <div className='p-5 mt-5 border'>
@@ -28,7 +21,7 @@ const FeaturedJobs = ({ data }) => {
             <h1 className='text-2xl'>{title}</h1>
             <p>{brandname}</p>
             <div className="flex gap-2">
-                <button className='border border-indigo-600 rounded p-2 m-1'>{onsite ? "On-site" : 'Remote'}</button>
+                <button className='border border-indigo-600 rounded p-2 m-1'>{onsite ? "On-site":"remote"}</button>
                 <button className='border border-indigo-600 rounded p-2 m-1'>{fulltime ? "Full-time":"Full-time"}</button>
             </div>
             <div className="flex gap-5">

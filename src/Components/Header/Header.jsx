@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -42,7 +42,7 @@ const Header = () => {
                         </div>
                     </div>
                     <div className="navbar-center">
-                        <a className="btn btn-ghost normal-case text-xl">Start Your Job Feature</a>
+                        <Link className="btn btn-ghost normal-case text-xl">Start Your Job Feature</Link>
                     </div>
                 </div>
             </div>

@@ -3,6 +3,10 @@ import React from 'react';
 const Blog = () => {
     return (
         <div>
+            <div className="p-5 text-center">
+                <h1 className='text-5xl'>Blog Section</h1>
+                <hr className='mt-5' />
+            </div>
             <div className="p-20">
                 <h1 className='text-4xl'>When to use the Contex API?</h1>
                 <p>Contex API is used when data is sent from <br /> parent to child and that data can be accepted from anywhere.</p>

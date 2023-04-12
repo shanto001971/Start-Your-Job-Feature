@@ -12,6 +12,8 @@ import AppliedJobs from './Components/AppliedJobs/AppliedJobs';
 import Blog from './Components/Blog/Blog';
 import ReviewPage from './Components/ReviewPage/ReviewPage';
 import ErrorElement from './Components/ErrorElement/ErrorElement';
+import cartProductsLoader from './Utiletis/loaders/cartProductsLoader';
+
 
 const router = createBrowserRouter([
   {
@@ -38,6 +40,7 @@ const router = createBrowserRouter([
       {
         path:"AppliedJobs",
         element:<AppliedJobs/>,
+        loader: cartProductsLoader
         
       },
       {

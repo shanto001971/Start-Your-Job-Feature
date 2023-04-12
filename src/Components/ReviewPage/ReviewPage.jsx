@@ -6,7 +6,7 @@ import { addToDb } from '../../Utiletis/Utiletis';
 
 const ReviewPage = () => {
     const [info, setInfo] = useState();
-    
+    // const [loading, ]
 
     const { id } = useParams();
 
