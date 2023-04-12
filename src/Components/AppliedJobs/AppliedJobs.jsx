@@ -22,19 +22,19 @@ const AppliedJobs = () => {
         } else if (event.target.textContent === "Show On-Site jobs") {
             setIsRemote(false);
         };
-            if (isRemote === true) {
-                const remoteJob = info.filter(product => product.onsite === true);
-                console.log(remoteJob)
-                setFilteredInfo(remoteJob)
-            }
-    
-            if (isRemote === false) {
-                const onsiteJob = info.filter(product => product.onsite === false);
-                console.log(onsiteJob)
-                setFilteredInfo(onsiteJob)
-            }
+        if (isRemote === true) {
+            const remoteJob = info.filter(product => product.onsite === true);
+            console.log(remoteJob)
+            setFilteredInfo(remoteJob)
         }
-    
+
+        if (isRemote === false) {
+            const onsiteJob = info.filter(product => product.onsite === false);
+            console.log(onsiteJob)
+            setFilteredInfo(onsiteJob)
+        }
+    }
+
 
 
 
@@ -44,7 +44,9 @@ const AppliedJobs = () => {
 
     return (
         <div>
-            <div className="text-center mt-6">
+            <div className="text-center h-48 text-white mt-6 " style={{
+                backgroundImage: `url("https://png.pngtree.com/thumb_back/fh260/back_our/20190614/ourmid/pngtree-blue-technology-web-banner-image_122453.jpg")`
+            }}>
                 <h1 className='text-5xl'>Applied Jobs</h1>
             </div>
             <div className='flex justify-end mr-20 mt-32'>

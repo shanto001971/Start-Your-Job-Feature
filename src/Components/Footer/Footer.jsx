@@ -48,7 +48,7 @@ const Footer = () => {
             </div>
             <div className="lg:flex justify-between p-10 border">
             
-                <p>@2023 CareerHub. All Rights Reserved</p>
+                <p>@2023 Your Job Feature. All Rights Reserved</p>
                 <p>Powered by Start Your Job Feature</p>
             </div>
         </div>
