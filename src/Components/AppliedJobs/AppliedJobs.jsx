@@ -7,13 +7,13 @@ const AppliedJobs = () => {
     const [info, setInfo] = useState([]);
     const [isRemote, setIsRemote] = useState(false);
     const [filteredInfo, setFilteredInfo] = useState([]);
-    console.log(filteredInfo)
+    // console.log(filteredInfo)
     const data = useLoaderData()
     useEffect(() => {
         setInfo(data)
         setFilteredInfo(data)
     }, [data, info])
-    console.log((isRemote))
+    // console.log((isRemote))
 
 
     const handleFilterBtn = (event) => {
@@ -24,13 +24,13 @@ const AppliedJobs = () => {
         };
         if (isRemote === true) {
             const remoteJob = info.filter(product => product.onsite === true);
-            console.log(remoteJob)
+            // console.log(remoteJob)
             setFilteredInfo(remoteJob)
         }
 
         if (isRemote === false) {
             const onsiteJob = info.filter(product => product.onsite === false);
-            console.log(onsiteJob)
+            // console.log(onsiteJob)
             setFilteredInfo(onsiteJob)
         }
     }

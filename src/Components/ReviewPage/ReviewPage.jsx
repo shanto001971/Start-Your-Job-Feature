@@ -11,7 +11,7 @@ const ReviewPage = () => {
     const { id } = useParams();
 
     useEffect(() => {
-        fetch('/public/jobs.json')
+        fetch('/jobs.json')
             .then(res => res.json())
             .then(data => {
                 const foundProduct = data.find(product => product.id === id);

@@ -2,7 +2,7 @@ import { getStoredCart } from "./Utiletis"
 
 
 export const productsAndCartData = async () => {
-  const productsData = await fetch('/public/jobs.json')
+  const productsData = await fetch('/jobs.json')
   const products = await productsData.json()
     // console.log(products)
   const savedCart = getStoredCart()
